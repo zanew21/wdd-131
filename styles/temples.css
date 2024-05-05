@@ -1,0 +1,81 @@
+/* mobile view */
+
+ @import url('https://fonts.google.com/specimen/Roboto?query=roboto');
+
+
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+header {
+    font-size: 40px;
+	background-color: aquamarine;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid aqua;
+}
+header,
+main {
+	margin: 0 auto;
+}
+h1 {
+	font-size: 2rem;
+	font-size: 48px;
+}
+nav {
+	background-color: aquamarine;
+	display: flex;
+	flex-direction: column;
+    position: relative;
+}
+nav a {
+	display: none;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+    color: aquamarine;
+}
+.hamburger {
+    display: block;
+	position:absolute;
+	padding: 20px;
+	top: 20px;
+	right: 20px;
+	margin-top: -120px;
+
+}
+h2{
+	grid-row: 1;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 50px;
+}
+main{
+	margin: 50px;
+}
+.title2{
+	display: grid;
+	grid-template-rows: 1fr;
+}
+.pictures {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+	justify-content: space-around;
+}
+figcaption{
+	text-align: center;
+}
+footer{
+    background-color: aquamarine;
+    height: 75px;
+    text-align: center;
+}
+
