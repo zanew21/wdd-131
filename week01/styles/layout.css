@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.first-content{
+    background: rgb(122, 64, 64);
+    grid-column: 1/4;
+}
+
+header p {
+    height: 100px;
+    padding: 15px;
+}
+.navigation{
+    height: 75px;
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+}
+
+nav a {
+    text-align: center;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+}
+
+main{
+    background: grey;
+    grid-column: 1/3;
+    height: 150px;
+    padding: 15px;
+}
+
+.second{
+    background: white;
+    grid-column: 3/4;
+    padding: 15px;
+}
+
+footer{
+    background: rgb(122, 64, 64);
+    grid-column: 1/4;
+    height: 100px;
+    padding: 15px;
+}
