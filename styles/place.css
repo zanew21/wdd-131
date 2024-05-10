@@ -1,0 +1,15 @@
+header {
+    background-color: lightgreen;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+}
+
+header img{
+    width: 100%;
+}
+
