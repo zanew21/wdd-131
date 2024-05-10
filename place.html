@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the purpose of this website is to show people">
+    <title>Country or Place</title>
+</head>
+<body>
+    <header>
+        <h1>North Carolina</h1>
+        <img srcset="images/charlotte.webp" media="(min-width:1000px;)">
+    </header>
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <ul class="data">
+                <li>Area: 53,819 sq mi</li>
+                <li>Population: 10.7 million</li>
+                <li>Capital: Raleigh</li>
+                <li>Languages: English, Spanish</li>
+                <li>Currency: US Dollar</li>
+                <li>Time Zone: Pacific</li>
+                <li>Calling Code: 252, 336, 704</li>
+                <li>Internet TLD: .nc</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h3>Weather</h3>
+            <img srcset="images/clouds.svg" media="(min-width:150px)">
+            <div>
+                <span>Temperature: </span>
+                <span id="temp"></span>
+            </div>
+            <div>
+                <span>Wind Speed: </span>
+                <span id="wind"></span>
+            </div>
+            <div>
+                <span>Wind Chill: </span>
+                <span id="chill"></span>
+            </div>
+            <div>
+                <span>Conditions: </span>
+                <span id="conditions">Partly Cloudy</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear">Zane Wood North Carolina</span></p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
     .images {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -18,7 +18,7 @@
 	header {
 		display: flex;
 		align-items: center;
-	justify-content: space-around;
+		justify-content: space-around;
 	}
 	nav {
 		justify-content: flex-end;
@@ -48,4 +48,111 @@
 
 
 
+ */
 
+
+ @media screen and (min-width: 500px) {
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0px;
+    }
+}
+ 
+@media (min-width: 640px) {
+    nav {
+        display: flex;
+    }
+    nav a {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 1050px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Ensure space between hamburger and nav links */
+    }
+    nav {
+        display: none; /* Hide nav links by default on smaller screens */
+        flex-direction: column; /* Stack navigation links vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 80px; /* Adjust as needed */
+        left: 0;
+        background-color: aquamarine;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+    nav a {
+        display: block; /* Display navigation links as blocks */
+        padding: 10px 0; /* Adjust as needed */
+    }
+    .hamburger {
+        display: block; /* Display hamburger on smaller screens */
+        cursor: pointer; /* Add cursor pointer */
+        position: absolute; /* Position the hamburger absolutely */
+        top: 20px;
+        right: 20px;
+        z-index: 999; /* Ensure hamburger is above other content */
+    }
+}
+ 
+@media (min-width: 1050px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav {
+        display: flex; /* Show nav links on larger screens */
+        justify-content: flex-end;
+        flex-direction: row;
+        position: static; /* Reset position to default */
+    }
+    nav a {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+}
+
+has context menu
+
+
+has context menu
+ 
+/* @media (min-width: 1050px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav {
+        justify-content: flex-end;
+        flex-direction: row;
+        position: relative;
+    }
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .hamburger {
+        display: none;
+    }
+} */
+ 
+@media screen and (max-width: 900px) {
+    .images {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+ 
+@media screen and (max-width: 600px) {
+    .images {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+}
