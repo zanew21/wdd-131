@@ -1,0 +1,54 @@
+@media screen and (min-width:640px) {
+    
+    .sunset {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .daytime {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat (2, auto);
+        z-index: 1;
+    }
+
+    .data {
+       position: absolute;
+       top: 20%;
+       bottom: 30%;
+       width: 50%;
+    }
+
+    .weather {
+        position: absolute;
+        top: 40%;
+        bottom: 30%;
+        width: 50%;
+        left: 50%;
+        
+    }
+
+    .info section {
+        background-color: rgb(144, 238, 144, 0.4);
+    }
+
+    h2 {
+        background-color: green;
+        width: 120px;
+    }
+    .data ul {
+        background-color: rgba(213, 213, 25, 0.4);
+    }
+
+    h3 {
+        background-color: green;
+        width: 120px;
+        text-align: right;
+        margin-left: 200px;
+    }
+}

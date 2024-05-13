@@ -12,7 +12,8 @@
 <body>
     <header>
         <h1>North Carolina</h1>
-        <img srcset="images/charlotte.webp" media="(min-width:1000px;)">
+        <img class="daytime" srcset="images/charlotte.webp" media="(min-width:1000px)">
+        <img class="sunset" srcset="images/sunset-charlotte.webp" media="(mind width: 1000px)">
     </header>
     <main>
         <section class="data">
@@ -31,22 +32,24 @@
         <section class="weather">
             <h3>Weather</h3>
             <img srcset="images/clouds.svg" media="(min-width:150px)">
-            <div>
-                <span>Temperature: </span>
-                <span id="temp"></span>
-            </div>
-            <div>
-                <span>Wind Speed: </span>
-                <span id="wind"></span>
-            </div>
-            <div>
-                <span>Wind Chill: </span>
-                <span id="chill"></span>
-            </div>
-            <div>
-                <span>Conditions: </span>
-                <span id="conditions">Partly Cloudy</span>
-            </div>
+            <section class="info">
+                <div>
+                    <span>Temperature: </span>
+                    <span id="temp"></span>
+                </div>
+                <div>
+                    <span>Wind Speed: </span>
+                    <span id="wind"></span>
+                </div>
+                <div>
+                    <span>Wind Chill: </span>
+                    <span id="chill"></span>
+                </div>
+                <div>
+                    <span>Conditions: </span>
+                    <span id="conditions">Partly Cloudy</span>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
