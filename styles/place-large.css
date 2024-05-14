@@ -33,16 +33,21 @@
         
     }
 
-    .info section {
-        background-color: rgb(144, 238, 144, 0.4);
+    .info {
+        background-color: rgba(213, 213, 25, 0.5);
     }
 
     h2 {
         background-color: green;
         width: 120px;
     }
+
     .data ul {
-        background-color: rgba(213, 213, 25, 0.4);
+        background-color: rgba(213, 213, 25, 0.5);
+    }
+
+    .data li {
+        color: black;
     }
 
     h3 {
