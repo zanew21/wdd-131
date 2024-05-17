@@ -1,8 +1,4 @@
-
-
-
-
- @media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
     .images {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
