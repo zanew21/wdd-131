@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-createTempleCard(templeCards);
+
 
 
 
@@ -105,6 +105,59 @@ const temples = [
       "https://www.churchofjesuschrist.org/imgs/7966d14e4b63698bddfbfbf57b6ed9dc1649fb5d/full/1600%2C/0/default"  
     }
   ];
+
+  createTempleCard(templeCards);
+
+function createTempleCard(filteredTemples) {
+  document.querySelector("#templeCards").innerHTML = "";
+  filteredTemples.forEach(temple => {
+      let card = document.createElement("section");
+      let name = document.createElement("h2");
+      let location = document.createElement("p");
+      let dedicated = document.createElement("p");
+      let area = document.createElement("p");
+      let img = document.createElement("img");
+
+      name.textContent = temple.templeName;
+      location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+      dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+      area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+      img.setAttribute("src", temple.imageUrl);
+      img.setAttribute("alt", `${temple.templeName} Temple`);
+      img.setAttribute("loading", "lazy");
+
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedicated);
+      card.appendChild(area);
+      card.appendChild(img);
+
+      document.querySelector("#templeCards").appendChild(card);
+  })
+}
+
+
+  const olderLink = document.querySelector("#older");
+const newerLink = document.querySelector("#newer");
+const largerLink = document.querySelector("#larger");
+const smallerLink = document.querySelector("#smaller");
+
+olderLink.addEventListener("click", () => {
+    let older = temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) < 1900);
+    createTempleCard(older);
+});
+newerLink.addEventListener("click", () => {
+    let newer = temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) > 2000);
+    createTempleCard(newer);
+});
+largerLink.addEventListener("click", () => {
+    let old = temples.filter(temple => temple.area > 90000);
+    createTempleCard(old);
+});
+smallerLink.addEventListener("click", () => {
+    let old = temples.filter(temple => temple.area < 10000);
+    createTempleCard(old);
+});
 
 window.onload = function() {
     var lastModifiedDate = new Date(document.lastModified);
