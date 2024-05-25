@@ -114,12 +114,11 @@ h1 {
     box-shadow: 1px 1px 4px #999;
 }
 
-.wf1 input:required {
+.wf1 input:required,
+.wf1 legend:required,
+.wf1 select:required
+ {
     border-left: solid 8px red;
-}
-
-.wf1 input:required:valid {
-    border-left: solid 8px green;
 }
 
 
