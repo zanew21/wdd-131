@@ -52,3 +52,19 @@ const products = [
 
 // Call the function to populate the dropdown initially
 populateDropdown();
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if localStorage supports and has a reviewCounter, initialize to 0 if not present
+    if (!localStorage.getItem('reviewCounter')) {
+        localStorage.setItem('reviewCounter', 0);
+    }
+
+    // Get the counter element
+    const counterElement = document.getElementById('reviewCounter');
+
+    // Increment the counter in localStorage
+    localStorage.setItem('reviewCounter', parseInt(localStorage.getItem('reviewCounter')) + 1);
+
+    // Display the updated counter value
+    counterElement.textContent = localStorage.getItem('reviewCounter');
+});
