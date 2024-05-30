@@ -7,6 +7,7 @@
     <link rel="stylesheet" src="styles/funnelcake.css">
     <link rel="stylesheet" src="styles/funnelcake-large.css">
     <script defer src="scripts/funnelcake.js"></script>
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
     <header>
@@ -19,14 +20,15 @@
         <img alt="header photo" src="images/headerphoto.webp">
     </header>
     <main>
-        <div>
+        <div id="biography">
             <img alt="choco" src="images/choco-drip.jpeg">
             <p>Winder's Original Funnel Cakes is a Family Owned Business since 1985. What started as a way to support their kids through college, Tom and Ann Winder and their many children and grandchildren gather at the fair every year to hand out beautifully, hand-crafted funnelcakes. Whether you're a fair enthusiast or a first-time attendee, our funnel cakes are an experience not to be missed. Indulge your senses and satisfy your cravings with every delectable bite. It's the taste of tradition, served with a dash of excitement!
             So, why resist? Join us at the Eastern Idaho Fair and discover why our funnel cakes are the talk of the town!</p>
         </div>
     </main>
     <footer>
-        &copy; Winder's Original Funnel Cakes LLC
+        id<p>&copy; <span id="currentyear">Winder's Original Funnel Cakes</span></p>
+        <p id="lastmodified"></p>
     </footer>
 </body>
 </html>
