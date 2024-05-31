@@ -1,8 +1,63 @@
+body {
+    background-color: white;
+    font-size: 22px;
+}
+
 header {
-    color:;
+    background-color:#A0EEC0;
+    display: grid;
+    grid-template-columns: 150px auto;
+    width: 100%;
+}
+
+#logo {
+    margin-right: 10px;
+    height: 100%;
+    width: 140px;
+    padding: 10px;
+}
+
+nav {
+    justify-content: space-around;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 35px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #333333;
+    color: #d9c2a3;
+}
+
+main img {
+    width: 100%;
+    height: 550px;
+}
+
+#biography {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#biography img {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    
+}
+
+#biography p {
+    background-color: black;
+    color: white;
 
 }
 
-.logo {
-    
+footer {
+    background-color: #A0EEC0;
+    padding: 10px;
 }
