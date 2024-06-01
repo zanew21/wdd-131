@@ -85,7 +85,6 @@ footer p {
 
 /* Funnel Cake SubPage */
 
-/* styles/funnelcake.css */
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -93,16 +92,19 @@ footer p {
     margin: 16px;
     text-align: center;
 }
+
 .card img {
     max-width: 100%;
     height: 300px;
     border-radius: 8px;
 }
+
 .card-title {
     margin-top: 8px;
     font-size: 18px;
     font-weight: bold;
 }
+
 #cakes {
     display: grid;
     grid-template-columns: 1fr;

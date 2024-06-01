@@ -30,8 +30,9 @@ function createCard(funnelCake) {
     card.className = 'card';
 
     const img = document.createElement('img');
-    img.src = funnelCake.imgSrc; // Corrected variable name
-    img.alt = funnelCake.name; // Corrected variable name
+    img.src = funnelCake.imgSrc;
+    img.alt = funnelCake.name;
+    img.loading = 'lazy';
 
     const title = document.createElement('div');
     title.className = 'card-title';
