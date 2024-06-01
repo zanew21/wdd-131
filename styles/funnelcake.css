@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Roboto+Slab");
+
 
 /* Home Page */
 
@@ -73,6 +73,7 @@ nav a:hover {
     font-size: 15px;
     margin-left: 30px;
     grid-row: 2;
+    font-family: Roboto Slab, sans-serif;
 }
 
 footer {
