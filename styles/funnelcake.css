@@ -1,12 +1,14 @@
+@import url("https://fonts.google.com/specimen/Roboto+Slab");
+
 /* Home Page */
 
 body {
-    background-color: white;
+    background-color: lightyellow;
     font-size: 22px;
 }
 
 header {
-    background-color:lightblue;
+    background-color:lightskyblue;
     display: grid;
     grid-template-columns: 150px auto;
     width: 100%;
@@ -22,6 +24,7 @@ header {
 nav {
     justify-content: space-around;
     display: flex;
+    font-family: Roboto Slab, sans-serif;
 }
 
 nav a {
@@ -47,7 +50,7 @@ nav a:hover {
     grid-column: 1/4;
     grid-row: 1;
     width: 100%;
-    height: 500px;
+    height: 600px;
     align-items: center;
 }
 
@@ -57,26 +60,26 @@ nav a:hover {
     width: 300px;
     height: 500px;
     margin-top: 30px;
+    border: 10px solid lightskyblue;
 }
 
 #biography p {
-    background-color: lightblue;
+    background-color: lightskyblue;
     color: black;
     padding: 15px;
     border-radius: 15px;
     margin-right: 30px;
     height: 500px;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 30px;
     grid-row: 2;
-    width:
-
 }
 
 footer {
-    background-color: lightblue;
+    background-color: lightskyblue;
     padding: 10px;
     display: flex;
+    font-family: Roboto Slab, sans-serif;
 }
 
 footer p {
@@ -85,12 +88,20 @@ footer p {
 
 /* Funnel Cake SubPage */
 
+h2 {
+    text-align: center;
+    font-family: Roboto Slab, sans-serif;
+    font-size: 3rem;
+}
+
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
     margin: 16px;
     text-align: center;
+    background-color: lightskyblue;
+    font-family: Roboto Slab, sans-serif;
 }
 
 .card img {
@@ -120,7 +131,9 @@ main {
 
 h1 {
     text-align: center;
+    font-family: Roboto Slab, sans-serif;
 }
+
 /* Form Styling */
 .wf1 fieldset {
     margin:2rem;

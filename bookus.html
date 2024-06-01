@@ -18,12 +18,12 @@
             <a alt="Page 3" href="bookus.html">Book Us</a>
         </nav>
     </header>
-    <main>
+    <main id="form">
         <h1>Book Us for your Event Today!</h1>
             <form method="get" action="review.html" class="wf1">
                 <fieldset>
                     <legend>Your Name</legend>
-                        <input type="text" id="name" name="name" placeholder="John Doe">
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
                 </fieldset>
                 
                 <fieldset>
@@ -41,12 +41,12 @@
 
                 <fieldset>
                     <legend>How Many People?</legend>
-                        <label><input type="number" name= "number input"></label>
+                        <label><input type="number" name= "number input" required></label>
                 </fieldset>
 
                 <fieldset>
                         <legend>Allergies? Please Specify</legend>
-                            <textarea id="allergies" name="allergies"></textarea>
+                            <textarea id="allergies" name="allergies" required></textarea>
                 </fieldset>
             
                 <input type="submit" value="Send">

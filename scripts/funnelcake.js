@@ -53,3 +53,23 @@ function renderCards() {
 }
 
 renderCards();
+
+// bookus.html page localstorage
+
+populateDropdown();
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if localStorage supports and has a reviewCounter, initialize to 0 if not present
+    if (!localStorage.getItem('submissionCounter')) {
+        localStorage.setItem('submissionCounter', 0);
+    }
+
+    // Get the counter element
+    const counterElement = document.getElementById('submissionCounter');
+
+    // Increment the counter in localStorage
+    localStorage.setItem('submissionCounter', parseInt(localStorage.getItem('submissionCounter')) + 1);
+
+    // Display the updated counter value
+    counterElement.textContent = localStorage.getItem('submissionCounter');
+});
