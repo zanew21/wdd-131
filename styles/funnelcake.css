@@ -24,7 +24,7 @@ header {
 nav {
     justify-content: space-around;
     display: flex;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 nav a {
@@ -43,7 +43,7 @@ nav a:hover {
 #biography {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #header_photo {
@@ -73,14 +73,14 @@ nav a:hover {
     font-size: 15px;
     margin-left: 30px;
     grid-row: 2;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 footer {
     background-color: lightskyblue;
     padding: 10px;
     display: flex;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 footer p {
@@ -91,7 +91,7 @@ footer p {
 
 h2 {
     text-align: center;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-size: 3rem;
 }
 
@@ -102,7 +102,7 @@ h2 {
     margin: 16px;
     text-align: center;
     background-color: lightskyblue;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 .card img {
@@ -132,7 +132,7 @@ main {
 
 h1 {
     text-align: center;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 /* Form Styling */
