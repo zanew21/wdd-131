@@ -1,24 +1,54 @@
-const funnelcake = [
+const funnelCakes = [
     {
-        funnelcakeName: "Strawberry"
+        name: "Strawberry",
+        imgSrc: "images/strawberry.webp"
     },
     {
-        funnelcakeName: "Chocolate"
+        name: "Chocolate",
+        imgSrc: "images/chocolate.webp"
     },
     {
-        funnelcakeName: "Caramel"
+        name: "Caramel",
+        imgSrc: "images/caramel.webp"
     },
     {
-        funnelcakeName: "Peaches"
+        name: "Peaches",
+        imgSrc: "images/peaches.webp"
     },
     {
-        funnelcakeName: "Triple Berry"
+        name: "Triple Berry",
+        imgSrc: "images/tripleberry.webp"
+    },
+    {
+        name: "Powdered",
+        imgSrc: "images/powderedcake.webp"
     }
-]
+];
 
-createFunnelCard("cakes");
+function createCard(funnelCake) {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-function createFunnelCard(funnelcakes) {
-    document.querySelector("#cakes#").innerHTML = "";
-    funnelcakes.forEach(cake)
+    const img = document.createElement('img');
+    img.src = funnelCake.imgSrc; // Corrected variable name
+    img.alt = funnelCake.name; // Corrected variable name
+
+    const title = document.createElement('div');
+    title.className = 'card-title';
+    title.textContent = funnelCake.name;
+
+    card.appendChild(img);
+    card.appendChild(title);
+
+    return card;
 }
+
+function renderCards() {
+    const container = document.getElementById('cakes');
+    funnelCakes.forEach(funnelCake => {
+        const card = createCard(funnelCake);
+        container.appendChild(card);
+    });
+}
+
+renderCards();

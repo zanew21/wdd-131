@@ -1,3 +1,32 @@
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
+    
+    /* Home Page */
+
+    #header_photo {
+        height: 1000px;
+    }
+  
+    #biography p {
+    grid-column: 2/2;
+    font-size: 20px;
+    width: 500px;
+    height: 300px;
+    margin-top: 70px;;
+  }
+
+  #choco {
+    grid-column: 1;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 30px;
+  }
+
+   /* Funnel Cake Subpage */
+
+    #cakes {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
     
 }
