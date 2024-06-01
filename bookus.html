@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet" href="styles/funnelcake.css">
-    <link rel="stylesheet" href="styles/funnelcake-large.css">
-    <script defer src="scripts/funnelcake.js"></script>
-    <script defer src="scripts/getdates.js"></script>
-</head>
+    <head>
+        <link rel="stylesheet" href="styles/funnelcake.css">
+        <link rel="stylesheet" href="styles/funnelcake-large.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Winder's Original Funnel Cakes</title>
+        <script defer src="scripts/funnelcake.js"></script>
+        <script defer src="scripts/getdates.js"></script>
+    </head>
 <body>
+    <header>
+        <img id="logo" alt="logo" src="images/funnelcakelogo.jpeg">
+        <nav>
+            <a alt="Home" href="personalhome.html">Home</a>
+            <a alt="Page 2" href="funnelcake.html">Funnel Cakes</a>
+            <a alt="Page 3" href="bookus.html">Book Us</a>
+        </nav>
+    </header>
     <main>
-        <h2>Book Us for your Event Today!</h2>
+        <h1>Book Us for your Event Today!</h1>
+            <form method="get" action="review.html" class="wf1">
+                <fieldset>
+                    <legend>Your Name</legend>
+                        <input type="text" id="name" name="name" placeholder="John Doe">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Type of Event</legend>
+                        <label><input type="radio" name="rating" value="one" required>Wedding</label>
+                        <label><input type="radio" name="rating" value="two">Birthday</label>
+                        <label><input type="radio" name="rating" value="three">Work Event</label>
+                        <label><input type="radio" name="rating" value="four">City Event(Farmer's Market, Rodeo, etc.)</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Date of Event</legend>
+                        <label><input type="date" name="completedDate" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How Many People?</legend>
+                        <label><input type="number" name= "number input"></label>
+                </fieldset>
+
+                <fieldset>
+                        <legend>Allergies? Please Specify</legend>
+                            <textarea id="allergies" name="allergies"></textarea>
+                </fieldset>
+            
+                <input type="submit" value="Send">
+        </form>
         
     </main>
     <footer>
-        id<p>&copy; <span id="currentyear">Winder's Original Funnel Cakes</span></p>
         <p id="lastmodified"></p>
+        <p>&copy; Winder's Original Funnel Cakes</p>
     </footer>
 </body>
 </html>
